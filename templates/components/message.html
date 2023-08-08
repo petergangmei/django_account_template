@@ -1,0 +1,9 @@
+<div class="container ">
+    {% if messages %}
+    <ul class="messages ">
+        {% for message in messages %}
+        <li{% if message.tags %} class="p-1 bg-{{ message.tags }}" style="list-style: none;" {% endif %}>{{ message }}</li>
+            {% endfor %}
+    </ul>
+    {% endif %}
+</div>

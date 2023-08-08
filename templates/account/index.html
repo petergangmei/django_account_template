@@ -1,0 +1,49 @@
+{%extends 'base.html' %}
+
+<!-- title -->
+{%block title%}
+Django Account Signup And Sign
+{%endblock%}
+<!-- title -->
+
+<!-- meta tag -->
+{%block meta-tag%}
+
+{%endblock%}
+<!-- meta tag -->
+
+<!-- content area -->
+{%block content%}
+{%include 'components/nav/default.html'%}
+{%include 'components/message.html'%}
+<div class="min-height-90vh container py-5">
+    <!-- Account Registration, Login, and Password Reset Content -->
+    <section>
+        <h2>Welcome to Your Django Web App!</h2>
+        <p>This is a sample Django template showcasing various components:</p>
+        <ul>
+            <li>Account registration</li>
+            <li>Login</li>
+            <li>Forgot password</li>
+            <li>Sending reset password emails</li>
+            <li>Welcome emails</li>
+        </ul>
+        <p>For your email to work, you will need to add <b>.env</b> file in the mail folder where manage.py is located</p>
+        <p>Add the below detail</p>
+        <p>EMAIL_HOST = 'your email host (get it from your email service provider)'</p>
+        <p>EMAIL_USE_TLS = False</p>
+        <p>EMAIL_PORT = 465</p>
+        <p>EMAIL_USE_SSL = True</p>
+        <p>EMAIL_HOST_USER = Youremail@mail.com</p>
+        <p>EMAIL_HOST_PASSWORD = your email account password.</p>
+        <p>Feel free to customize this template to match your application's design and functionality.</p>
+    </section>
+
+    
+
+</div>
+
+
+{%include 'components/footer/default.html'%}
+{%endblock%}
+<!-- content area -->

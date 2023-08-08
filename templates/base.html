@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="zRDNew6WE9mEfhCzfESxsrwDYotJdTDD2mA2GXUH4Ws" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <link href="{% static 'css/style.css'%}" rel="stylesheet">
+
+    <link href="{% static 'css/fonts.css'%}" rel="stylesheet">
+
+    <title>{%block title%} {%endblock%}</title>
+
+    {%block meta-tag%} {%endblock%}
+</head>
+
+<body>
+    
+
+
+    {%block content%}
+    {%endblock%}
+
+    <script src="{%static 'js/scripts.js'%}"></script>
+
+</body>
+
+</html>
